@@ -1,0 +1,53 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+build/
+out/
+
+# Environment files
+.env
+.env.*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# Logs
+logs/
+*.log
+
+# TypeScript cache
+*.tsbuildinfo
+ 
+# Coverage reports
+coverage/
+# Temporary files
+temp/
+# IDE specific files
+.idea/
+# MacOS specific files
+*.DS_Store
+# Windows specific files
+*.lnk
+# Linux specific files
+*~
+# Backup files
+*.bak
+# Documentation
+docs/
+
+# Test files
+*.test.js
+*.spec.js
+# Build artifacts
+*.tgz
+# Yarn integrity file
+.yarn-integrity 

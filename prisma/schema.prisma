@@ -1,0 +1,34 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model UserContext {
+  id        Int      @id @default(autoincrement())
+  userId    String
+  message   String
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model AcademicWork {
+  id        Int      @id @default(autoincrement())
+  userId    String
+  topic     String
+  content   String
+  createdAt DateTime @default(now())
+
+  @@index([userId])
+}
+
+model UserPreference {
+  id        Int      @id @default(autoincrement())
+  userId    String   @unique
+  mode      String   @default("saide")
+  createdAt DateTime @default(now())
+}

@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const dotenv_1 = require("dotenv");
+(0, dotenv_1.config)();
+require("@/ai/flows/extract-instructions-from-file.ts");
+require("@/ai/flows/generate-academic-text.ts");
+require("@/ai/flows/expand-academic-text.ts");
+require("@/ai/flows/deepen-academic-text.ts");
+require("@/ai/flows/generate-index-flow.ts");
+require("@/ai/flows/detect-topic-flow.ts");
+require("@/ai/flows/analize-imagem.ts");
